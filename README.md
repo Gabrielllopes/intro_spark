@@ -28,3 +28,10 @@ O script `get_data.sh` realiza o download dos dados, estração e conversão del
 $ sh get_data.sh
 ```
 
+### Passo 2 - Criar data lake
+Aqui sera criado um mini datalake, que será um arquivo parquet que contem todas as informações de u.data, u.item e u.user agregadas. Este arquivo sera formatado para que cada campo possua um tipo.
+
+É preciso atenção pois os separadores estão em formatos diferêntes, sendo que u_item e u_usar usam "|" como separador e u_data usa "\t".
+
+A criação deste arquivo parquet pode ser observada no nootebook `create_parquet.ipynb` assim como no script `create_parquet.py`.
+
